@@ -11,14 +11,21 @@
 		967C14DA2A79893B00BC7102 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967C14D92A79893B00BC7102 /* ContentView.swift */; };
 		967C14DC2A79893C00BC7102 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 967C14DB2A79893C00BC7102 /* Assets.xcassets */; };
 		967C14DF2A79893C00BC7102 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 967C14DE2A79893C00BC7102 /* Preview Assets.xcassets */; };
+		967C14EA2A79894B00BC7102 /* WeakExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967C14E62A79894B00BC7102 /* WeakExample.swift */; };
+		967C14EB2A79894B00BC7102 /* UnownedExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967C14E72A79894B00BC7102 /* UnownedExample.swift */; };
+		967C14EC2A79894B00BC7102 /* NavigationLazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967C14E82A79894B00BC7102 /* NavigationLazyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		967C14D42A79893B00BC7102 /* WeakUnownedSwiftUINavigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeakUnownedSwiftUINavigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		967C14D42A79893B00BC7102 /* WeakUnownedSwiftUINavigationExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeakUnownedSwiftUINavigationExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		967C14D72A79893B00BC7102 /* WeakUnownedSwiftUINavigationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakUnownedSwiftUINavigationApp.swift; sourceTree = "<group>"; };
 		967C14D92A79893B00BC7102 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		967C14DB2A79893C00BC7102 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		967C14DE2A79893C00BC7102 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		967C14E62A79894B00BC7102 /* WeakExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeakExample.swift; sourceTree = "<group>"; };
+		967C14E72A79894B00BC7102 /* UnownedExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnownedExample.swift; sourceTree = "<group>"; };
+		967C14E82A79894B00BC7102 /* NavigationLazyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationLazyView.swift; sourceTree = "<group>"; };
+		967C14ED2A79899900BC7102 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,7 +42,8 @@
 		967C14CB2A79893B00BC7102 = {
 			isa = PBXGroup;
 			children = (
-				967C14D62A79893B00BC7102 /* WeakUnownedSwiftUINavigation */,
+				967C14ED2A79899900BC7102 /* README.md */,
+				967C14D62A79893B00BC7102 /* WeakUnownedSwiftUINavigationExample */,
 				967C14D52A79893B00BC7102 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,20 +51,23 @@
 		967C14D52A79893B00BC7102 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				967C14D42A79893B00BC7102 /* WeakUnownedSwiftUINavigation.app */,
+				967C14D42A79893B00BC7102 /* WeakUnownedSwiftUINavigationExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		967C14D62A79893B00BC7102 /* WeakUnownedSwiftUINavigation */ = {
+		967C14D62A79893B00BC7102 /* WeakUnownedSwiftUINavigationExample */ = {
 			isa = PBXGroup;
 			children = (
+				967C14E82A79894B00BC7102 /* NavigationLazyView.swift */,
+				967C14E72A79894B00BC7102 /* UnownedExample.swift */,
+				967C14E62A79894B00BC7102 /* WeakExample.swift */,
 				967C14D72A79893B00BC7102 /* WeakUnownedSwiftUINavigationApp.swift */,
 				967C14D92A79893B00BC7102 /* ContentView.swift */,
 				967C14DB2A79893C00BC7102 /* Assets.xcassets */,
 				967C14DD2A79893C00BC7102 /* Preview Content */,
 			);
-			path = WeakUnownedSwiftUINavigation;
+			path = WeakUnownedSwiftUINavigationExample;
 			sourceTree = "<group>";
 		};
 		967C14DD2A79893C00BC7102 /* Preview Content */ = {
@@ -70,9 +81,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		967C14D32A79893B00BC7102 /* WeakUnownedSwiftUINavigation */ = {
+		967C14D32A79893B00BC7102 /* WeakUnownedSwiftUINavigationExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 967C14E22A79893C00BC7102 /* Build configuration list for PBXNativeTarget "WeakUnownedSwiftUINavigation" */;
+			buildConfigurationList = 967C14E22A79893C00BC7102 /* Build configuration list for PBXNativeTarget "WeakUnownedSwiftUINavigationExample" */;
 			buildPhases = (
 				967C14D02A79893B00BC7102 /* Sources */,
 				967C14D12A79893B00BC7102 /* Frameworks */,
@@ -82,9 +93,9 @@
 			);
 			dependencies = (
 			);
-			name = WeakUnownedSwiftUINavigation;
+			name = WeakUnownedSwiftUINavigationExample;
 			productName = WeakUnownedSwiftUINavigation;
-			productReference = 967C14D42A79893B00BC7102 /* WeakUnownedSwiftUINavigation.app */;
+			productReference = 967C14D42A79893B00BC7102 /* WeakUnownedSwiftUINavigationExample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +113,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 967C14CF2A79893B00BC7102 /* Build configuration list for PBXProject "WeakUnownedSwiftUINavigation" */;
+			buildConfigurationList = 967C14CF2A79893B00BC7102 /* Build configuration list for PBXProject "WeakUnownedSwiftUINavigationExample" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +126,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				967C14D32A79893B00BC7102 /* WeakUnownedSwiftUINavigation */,
+				967C14D32A79893B00BC7102 /* WeakUnownedSwiftUINavigationExample */,
 			);
 		};
 /* End PBXProject section */
@@ -137,7 +148,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				967C14EA2A79894B00BC7102 /* WeakExample.swift in Sources */,
 				967C14DA2A79893B00BC7102 /* ContentView.swift in Sources */,
+				967C14EC2A79894B00BC7102 /* NavigationLazyView.swift in Sources */,
+				967C14EB2A79894B00BC7102 /* UnownedExample.swift in Sources */,
 				967C14D82A79893B00BC7102 /* WeakUnownedSwiftUINavigationApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,7 +280,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"WeakUnownedSwiftUINavigation/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"WeakUnownedSwiftUINavigationExample/Preview Content\"";
 				DEVELOPMENT_TEAM = G85YYYKRLS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -280,7 +294,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.WeakUnownedSwiftUINavigation;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.WeakUnownedSwiftUINavigationExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -295,7 +309,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"WeakUnownedSwiftUINavigation/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"WeakUnownedSwiftUINavigationExample/Preview Content\"";
 				DEVELOPMENT_TEAM = G85YYYKRLS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -309,7 +323,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.WeakUnownedSwiftUINavigation;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.WeakUnownedSwiftUINavigationExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -320,7 +334,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		967C14CF2A79893B00BC7102 /* Build configuration list for PBXProject "WeakUnownedSwiftUINavigation" */ = {
+		967C14CF2A79893B00BC7102 /* Build configuration list for PBXProject "WeakUnownedSwiftUINavigationExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				967C14E02A79893C00BC7102 /* Debug */,
@@ -329,7 +343,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		967C14E22A79893C00BC7102 /* Build configuration list for PBXNativeTarget "WeakUnownedSwiftUINavigation" */ = {
+		967C14E22A79893C00BC7102 /* Build configuration list for PBXNativeTarget "WeakUnownedSwiftUINavigationExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				967C14E32A79893C00BC7102 /* Debug */,
