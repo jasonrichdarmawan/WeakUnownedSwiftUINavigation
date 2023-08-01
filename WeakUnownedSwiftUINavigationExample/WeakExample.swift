@@ -47,6 +47,8 @@ struct FeatureBView: View {
 }
 
 struct FeatureAView: View {
+    @State private var isFeatureCPresented = false
+    
     let publisher: Publisher
     
     init(publisher: Publisher = Publisher()) {
@@ -57,37 +59,17 @@ struct FeatureAView: View {
         VStack {
             Text("Feature A")
             
-            NavigationLink {
-                NavigationLazyView {
-                    FeatureBView(publisher: publisher)
-                }
+            Button {
+                isFeatureCPresented = true
             } label: {
                 Text("Feature B")
             }
             .buttonStyle(.borderedProminent)
         }
-    }
-}
-
-struct WeakExample: View {
-    var body: some View {
-        NavigationStack {
-            List {
-                NavigationLink {
-                    NavigationLazyView {
-                        FeatureAView()
-                    }
-                } label: {
-                    Text("Feature A")
-                }
-
+        .navigationDestination(isPresented: $isFeatureCPresented) {
+            NavigationLazyView {
+                FeatureBView(publisher: publisher)
             }
         }
-    }
-}
-
-struct WeakExample_Previews: PreviewProvider {
-    static var previews: some View {
-        WeakExample()
     }
 }

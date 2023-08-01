@@ -9,24 +9,34 @@ import SwiftUI
 
 @main
 struct WeakUnownedSwiftUINavigationApp: App {
+    @State private var isFeatureAPresented = false
+    
+    @State private var isFeatureCPresented = false
+    
     var body: some Scene {
         WindowGroup {
             NavigationStack {
                 List {
-                    NavigationLink {
-                        NavigationLazyView {
-                            FeatureAView()
-                        }
+                    Button {
+                        isFeatureAPresented = true
                     } label: {
                         Text("Weak Example")
                     }
-
-                    NavigationLink {
-                        NavigationLazyView {
-                            FeatureCView()
-                        }
+                    
+                    Button {
+                        isFeatureCPresented = true
                     } label: {
                         Text("Unowned Example")
+                    }
+                }
+                .navigationDestination(isPresented: $isFeatureAPresented) {
+                    NavigationLazyView {
+                        FeatureAView()
+                    }
+                }
+                .navigationDestination(isPresented: $isFeatureCPresented) {
+                    NavigationLazyView {
+                        FeatureCView()
                     }
                 }
             }

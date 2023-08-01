@@ -45,6 +45,8 @@ class FeatureCCoordinator {
 }
 
 struct FeatureCView: View {
+    @State private var isFeatureDPresented = false
+    
     let coordinator: FeatureCCoordinator
     
     init(coordinator: FeatureCCoordinator = FeatureCCoordinator()) {
@@ -55,14 +57,17 @@ struct FeatureCView: View {
         VStack {
             Text("Feature C")
             
-            NavigationLink {
-                NavigationLazyView {
-                    featureDView
-                }
+            Button {
+                isFeatureDPresented = true
             } label: {
                 Text("Feature D")
             }
             .buttonStyle(.borderedProminent)
+        }
+        .navigationDestination(isPresented: $isFeatureDPresented) {
+            NavigationLazyView {
+                featureDView
+            }
         }
     }
     
@@ -70,27 +75,5 @@ struct FeatureCView: View {
         let dCoordinator = FeatureDCoordinator(cCoordinator: coordinator)
         coordinator.dCoordinator = dCoordinator
         return FeatureDView(coordinator: dCoordinator)
-    }
-}
-
-struct UnownedExample: View {
-    var body: some View {
-        NavigationStack {
-            List {
-                NavigationLink {
-                    NavigationLazyView {
-                        FeatureCView()
-                    }
-                } label: {
-                    Text("Feature C")
-                }
-            }
-        }
-    }
-}
-
-struct UnownedExample_Previews: PreviewProvider {
-    static var previews: some View {
-        UnownedExample()
     }
 }
