@@ -45,7 +45,7 @@ class FeatureCCoordinator {
 }
 
 struct FeatureCView: View {
-    var coordinator: FeatureCCoordinator?
+    let coordinator: FeatureCCoordinator
     
     init(coordinator: FeatureCCoordinator = FeatureCCoordinator()) {
         self.coordinator = coordinator
@@ -67,8 +67,8 @@ struct FeatureCView: View {
     }
     
     private var featureDView: some View {
-        let dCoordinator = FeatureDCoordinator(cCoordinator: coordinator!)
-        coordinator!.dCoordinator = dCoordinator
+        let dCoordinator = FeatureDCoordinator(cCoordinator: coordinator)
+        coordinator.dCoordinator = dCoordinator
         return FeatureDView(coordinator: dCoordinator)
     }
 }
