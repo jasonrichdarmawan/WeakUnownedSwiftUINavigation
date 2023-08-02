@@ -16,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9655E9462A7A24AB00DFB581 /* MRT Jakarta Navigation Use Cases-Weak or Unowned Example.drawio.drawio.svg */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "MRT Jakarta Navigation Use Cases-Weak or Unowned Example.drawio.drawio.svg"; sourceTree = "<group>"; };
 		967C14D42A79893B00BC7102 /* WeakUnownedSwiftUINavigationExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeakUnownedSwiftUINavigationExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		967C14D72A79893B00BC7102 /* WeakUnownedSwiftUINavigationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakUnownedSwiftUINavigationApp.swift; sourceTree = "<group>"; };
 		967C14DB2A79893C00BC7102 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -40,6 +41,7 @@
 		967C14CB2A79893B00BC7102 = {
 			isa = PBXGroup;
 			children = (
+				9655E9462A7A24AB00DFB581 /* MRT Jakarta Navigation Use Cases-Weak or Unowned Example.drawio.drawio.svg */,
 				967C14ED2A79899900BC7102 /* README.md */,
 				967C14D62A79893B00BC7102 /* WeakUnownedSwiftUINavigationExample */,
 				967C14D52A79893B00BC7102 /* Products */,

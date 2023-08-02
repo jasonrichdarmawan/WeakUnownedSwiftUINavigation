@@ -21,7 +21,7 @@ class Publisher {
     let id: UUID
     
     // try to remove weak
-    weak var delegate: Subscriber?
+    weak var subscriber: Subscriber?
     
     init(id: UUID = UUID()) {
         self.id = id
@@ -34,11 +34,9 @@ struct FeatureBView: View {
     let subscriber: Subscriber
     
     init(
-        publisher: Publisher = Publisher(),
         subscriber: Subscriber = Subscriber()
     ) {
         self.subscriber = subscriber
-        publisher.delegate = subscriber
     }
     
     var body: some View {
@@ -68,8 +66,14 @@ struct FeatureAView: View {
         }
         .navigationDestination(isPresented: $isFeatureCPresented) {
             NavigationLazyView {
-                FeatureBView(publisher: publisher)
+                featureBView
             }
         }
+    }
+    
+    private var featureBView: some View {
+        let subscriber = Subscriber()
+        publisher.subscriber = subscriber
+        return FeatureBView(subscriber: subscriber)
     }
 }
